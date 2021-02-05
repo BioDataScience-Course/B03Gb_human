@@ -40,14 +40,13 @@ Les données sont téléchargeables au fomat csv via l’url suivant :
 Ce projet est un projet **individuel**, **court** et **libre** qui doit
 être **terminé pour la fin du module 3**.
 
-Réalisez un court carnet d’analyse structuré sur une **question de votre
-choix** sur les données de biométrie humaine.
-
 # Consignes
+
+Sur base d’une question de recherche que vous choisissez.
 
 ## Script R
 
-Dans un script R :
+Dans un script R nommé `biometry.R` :
 
   - Importez vos données
 
@@ -57,9 +56,6 @@ Dans un script R :
 biometry <- readr::read_csv("https://docs.google.com/spreadsheets/d/1UfpZvx1_nd7d10vIMAfGVZ1vWyIuzeiKxPL0jfkNSQM/export?format=csv", locale = readr::locale(decimal_mark = ","))
 ```
 
-  - Retirez les nombreuses valeurs manquantes (vous pouvez utiliser par
-    exemple la fonction `drop_na()`)
-
   - Ajoutez les labels à vos variables. (vous pouvez utiliser par
     exemple la fonction `labelise()`).
 
@@ -68,9 +64,9 @@ biometry <- readr::read_csv("https://docs.google.com/spreadsheets/d/1UfpZvx1_nd7
 
 ## human\_notes
 
-Dans le fichier human\_notes, réalisez au moins 3 modèles linéaires en
-lien avec votre thématique. Réalisez des analyses complètes (N’oubliez
-donc pas l’analyse des résidus)
+Dans le fichier `human_notes.Rmd`, réalisez au moins 3 modèles linéaires
+en lien avec votre thématique. Réalisez des analyses complètes
+(N’oubliez donc pas l’analyse des résidus)
 
 ## human\_report
 
