@@ -1,19 +1,14 @@
 ---
-title: "Carnet de notes"
+title: "___"
+author: "___"
+date: "___"
 output: html_notebook
 ---
 
-# Introduction
+## Introduction
 
-<!---
-Cette section doit contenir une courte introduction sur le sujet dont va traiter ce carnet de notes
---->
+<!--% Ajoutez une courte introduction sur le sujet dont va traiter ce carnet de notes -->
 
-# Analyses
+## Analyses
 
-<!--- Consignes
-Cette section doit contenir au minimum 3 modèles linéaires de votre choix en lien avec votre thématique de recherche. Vous ne pouvez pas dépasser 5 modèles linéaires.
---->
-
-
-
+<!--% Effectuez au minimum trois modèles linéaires (généralisés) de votre choix en lien avec votre thématique de recherche. Vous ne pouvez pas dépasser cinq modèles linéaires. -->

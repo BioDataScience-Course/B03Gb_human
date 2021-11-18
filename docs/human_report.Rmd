@@ -1,6 +1,6 @@
 ---
-title: "Rapport Scientifique"
-author: "Nom des auteurs"
+title: "___"
+author: "___"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 bibliography: references.bib
 lang: "fr"
@@ -9,25 +9,28 @@ output: bookdown::html_document2 # peut être remplacé par pdf_document2,...
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
-# List of packages
 SciViews::R
 ```
 
-# Résumé {-}
+## Résumé {-}
 
-# Introduction
+## Introduction
 
-blablabla [@Anderson1935]
+<!--% Ceci est juste un exemple pour montrer une cit  tion bibliographique, remplacez-là par votre propre introduction -->
 
-# Analyse
+Blablabla [@Anderson1935]
 
-```{r import_data}
+## Analyse
+
+<!--% Ici, nous avnos deux exemples qui gaénèrent une figure et une table et qui les citent. Remplacez-les par vos propres analyses. -->
+
+```{r import}
 iris <- read("iris", package = "datasets", lang = "fr")
 ```
 
-On observe sur la figure \@ref(fig:is)
+On observe sur la figure \@ref(fig:is)...
 
-```{r is, fig.cap= "Variation de la longueur des pétales [cm] en fonction de la longueur des sépales [cm] en fonction de trois espèces d'Iris"}
+```{r is, fig.cap= "Variation de la longueur des pétales en fonction de la longueur des sépales pour trois espèces d'Iris."}
 chart(iris, petal_length ~ sepal_length %col=% species) +
   geom_point()
 ```
@@ -37,12 +40,16 @@ La tableau \@ref(tab:kable) met en évidence ...
 ```{r kable}
 iris %>.%
   group_by(., species) %>.%
-  summarise(., pl_mean = round(mean(petal_length), 3), pl_sd = round(sd(petal_length), 3)) %>.%
+  summarise(.,
+    pl_mean = round(mean(petal_length), 3),
+    pl_sd = round(sd(petal_length), 3)) %>.%
   knitr::kable(., 
-    caption = "Moyennes et écart-types [cm] de trois espèces d' Iris",
+    caption = "Moyennes et écart-types de mesures des fleurs de trois espèces d' Iris.",
     col.names = c("Espèces", "Moyenne [cm]", "Ecart-type [cm]"), align = "c")
 ```
 
-# Conclusions
+## Discussion et conclusions
 
-# Références
+
+## Références
+
