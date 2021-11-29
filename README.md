@@ -1,11 +1,11 @@
-Modèles linéaires (généralisés) appliuqués à la biométrie humaine
+Modèles linéaires (généralisés) appliqués à la biométrie humaine
 ================
 
-<!--- do not edit readme.md ---->
+<!-- do not edit readme.md -->
 
 ## Avant-propos
 
-Cette séance d’exercices est suceptible d’être adaptée. N’hésitez pas à
+Cette séance d’exercices est susceptible d’être adaptée. N’hésitez pas à
 vérifier le lien suivant afin de voir si des modifications n’ont pas été
 apportées dans les consignes :
 <https://github.com/BioDataScience-Course/B03Gb_human>
@@ -20,16 +20,12 @@ modèle(s) linéaires(s) (généralisés).
 Étant donné que vous avez été des scientifiques consciencieux, vous avez
 collecté vos données en y associant des métadonnées.
 
-Les données ont été collectées via un document GoogleSheet à l’adresse
-suivante :
-<https://docs.google.com/spreadsheets/d/1GJAGWjwNBtEGqQXqFcNxkrwcw-5n-gqwmiGAzxUZrxg/edit?usp=sharing>
+Les données sont téléchargeables au fomat CSV via :
+<https://docs.google.com/spreadsheets/d/e/2PACX-1vSfY7b0ICF64uv9vIYi8Jg38Rw3pKvLHC5TW0XOZYVQ4ce2dTmXGM5Cm8J922MsYm_fk75DKOK2wC4b/pub?output=csv>
 
 Les métadonnées associées aux données ont été recensées dans un document
 GoogleDoc :
 <https://docs.google.com/spreadsheets/d/1j55bB9YEAVbS4eRE-i6L-NEYhHXua-dxs-aQr_qko7k/edit?usp=sharing>
-
-Les données sont téléchargeables au fomat CSV via :
-<https://docs.google.com/spreadsheets/d/e/2PACX-1vSfY7b0ICF64uv9vIYi8Jg38Rw3pKvLHC5TW0XOZYVQ4ce2dTmXGM5Cm8J922MsYm_fk75DKOK2wC4b/pub?output=csv>
 
 ## Consignes
 
@@ -45,7 +41,16 @@ Dans un script R nommé `biometry.R` :
 -   Importez vos données
 
 ``` r
-biometry <- readr::read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSfY7b0ICF64uv9vIYi8Jg38Rw3pKvLHC5TW0XOZYVQ4ce2dTmXGM5Cm8J922MsYm_fk75DKOK2wC4b/pub?output=csv", locale = readr::locale(decimal_mark = ","))
+SciViews::R
+```
+
+    ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+    ## x dplyr::filter() masks stats::filter()
+    ## x dplyr::lag()    masks stats::lag()
+    ## x dplyr::select() masks MASS::select()
+
+``` r
+biometry <- read$csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSfY7b0ICF64uv9vIYi8Jg38Rw3pKvLHC5TW0XOZYVQ4ce2dTmXGM5Cm8J922MsYm_fk75DKOK2wC4b/pub?output=csv")
 ```
 
 -   Ajoutez les labels à vos variables. (vous pouvez utiliser par
